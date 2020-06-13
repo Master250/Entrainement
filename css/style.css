@@ -1,0 +1,192 @@
+/*Partie de liseret*/
+.liseret h1
+{
+    background-color: black;
+    color: #FFC107;
+}
+.liseret
+{
+    flex: 2;
+    width: 20%;
+    background-color: #FFC107;
+}
+#contenu_contact p,strong,address,.contenu_a_propos p,.contenu_loisir img
+{
+    margin: 20px;
+}
+#contenu_contact h1,.contenu_a_propos h1,.contenu_loisir h1
+{
+    text-align: center;
+}
+.contenu_a_propos
+{
+    margin-bottom: 280px;
+}
+.contenu_a_propos p
+{
+    line-height: 20px;
+    text-align: justify;
+}
+
+#contenu_contact h1
+{
+    margin-bottom: 40px;
+}
+.contenu_loisir img
+{
+    margin: 10px;
+}
+
+
+/*Corp du CV*- Body*/
+body
+{
+   display: flex;
+   border: 1px solid rgb(179, 174, 174);
+}
+
+header
+{
+    padding: 60px;
+}
+
+.séparateur
+{
+    padding: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: #FFC107;
+}
+hr
+{
+    color: #FFC107;
+}
+.contenu_CV
+{
+    flex: auto;
+    width: 80%;
+}
+
+.contenu_CV img
+{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+span
+{
+    color: #FFC107;
+}
+u
+{
+    text-decoration: #FFC107 underline;
+}
+ul
+{
+    width: 25%;
+    margin-left: 30px;
+}
+ul
+{
+    list-style: none;
+}
+li::before
+{
+    content: "•";
+    color: #FFC107;
+    display: inline-flex;
+    margin-left: -1em;
+    margin-right: 0.1em;
+    width: 1em;
+    font-size: 2em;
+}
+.annee .puce_rond
+{
+    list-style:none;
+}
+.puce_rond li::before
+{
+    content: url(../icon/Shape5.svg);
+    display: inline-flex;
+    margin-left: -1em;
+    margin-right: 0.5em;
+    width: 0.5em;
+}
+.titre
+{
+    display: flex;
+    padding: 20px;
+}
+.détails 
+{
+    margin-left: 0px;
+    width: 80%;
+}
+.annee
+{
+    display: flex;
+}
+/*Bas de page footer*/
+.Recommandation
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 100px;
+}
+
+footer
+{
+    margin-bottom: 20px;
+}
+
+/*--Media query responsive design --*/
+
+@media all and (max-width: 1024px)
+{
+    body,header
+    {
+        width: auto;
+    }
+    body.détails p,.Recommandation   
+    {
+        text-align: justify;
+        flex-wrap: wrap;
+        overflow-wrap: break-word; /*Eviter le dépassement d'une chaine de caractaire*/  
+    }
+
+    .contenu_CV img,#contenu_contact img
+    {
+        display: none;
+    }
+
+    .liseret
+    {
+        background-color: #607D8B;
+    }
+    
+
+}
+
+/*Règles CSS pour les mobiles*/
+@media all and (max-device-width: 480px)
+{
+    body
+    {
+        display: block;
+    }
+    body.détails p
+    {
+        text-align: justify;
+        flex-wrap: wrap;
+        overflow-wrap: break-word; /*Eviter le dépassement d'une chaine de caractaire*/
+    }
+
+    #contenu_contact img
+    {
+        position: absolute;
+        padding: 0px;
+        top: 0px;
+        justify-content: center;
+    }
+
+}
